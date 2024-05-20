@@ -29,6 +29,10 @@
     font-size: 14px;
 }
 
+.first-entry img {
+    border-radius: 50%;
+}
+
 .home-info .entry-content {
     -webkit-line-clamp: unset;
 }
