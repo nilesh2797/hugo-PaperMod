@@ -1,7 +1,9 @@
 {{- $scratch := newScratch }}
 
 {{- if (.Param "ShowVenue") -}}
+{{- if or .Params.venue }}
 {{- $scratch.Add "meta" (slice (printf "[%s]" .Params.venue)) }}
+{{- end }}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
